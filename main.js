@@ -8,6 +8,8 @@ player_y = 10;
 
 var player_object= "";
 
+var block_image_object = "";
+
 function player_update()
 {
     fabric.Image.fromURL("player.png", function(Img){
@@ -137,7 +139,7 @@ function up()
         console.log("altura del bloque = " + block_image_height);
         console.log("cuando se presiona la flecha hacia arriba, X = " + player_x + " , y = " + player_y);
         canvas.remove(player_object);
-        player_update
+        player_update();
 
     }
 }
@@ -159,7 +161,7 @@ function left()
         console.log("ancho del bloque = " + block_image_width);
         console.log("cuando se presiona la flecha izquierda, X =  " + player_x + " , Y = " + player_y);
         canvas.remove(player_object);
-        player_update;
+        player_update();
     }
 }
 
